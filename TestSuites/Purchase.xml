@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="rahulshettyacademy" parallel="tests">
+    <groups>
+        <run>
+            <include name="Purchase"/>
+        </run>
+    </groups>
+    <test thread-count="5" name="Submit Order Test">
+        <classes>
+            <class name="rahulshettyacademy.tests.t02_SubmitOrderTest">
+            </class>
+            <class name="rahulshettyacademy.tests.t04_SubmitOrderTestJason">
+            </class>
+        </classes>
+    </test>
+    <test thread-count="5" name="Error Validations test">
+        <classes>
+            <class name="rahulshettyacademy.tests.t03_ErrorValidations">
+            </class>
+        </classes>
+    </test>
+</suite>
