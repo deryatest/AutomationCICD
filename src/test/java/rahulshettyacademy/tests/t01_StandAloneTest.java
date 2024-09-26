@@ -56,6 +56,8 @@ public class t01_StandAloneTest {
         String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
         Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 
+//        Comments so that my push will trigger Jenkins
+
         driver.quit();
     }
 }
